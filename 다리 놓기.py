@@ -17,3 +17,5 @@ def fac(n):
 for i in range(test):
     case.append(int(fac(m[i])/(fac(n[i])*fac(m[i]-n[i]))))
     print(case[i])
+
+#mCn
