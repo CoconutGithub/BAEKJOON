@@ -11,7 +11,7 @@ result=[]
 for i in range(N):
     dic[card_n[i]]=0
 for i in card_m:
-    if i in dic:
+    if i in dic:#딕셔너리에서 찾는거는 O(1)이라고함
         result.append(1)
     else:
         result.append(0)
