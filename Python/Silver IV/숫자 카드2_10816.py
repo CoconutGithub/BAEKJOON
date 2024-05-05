@@ -12,5 +12,11 @@ for i in range(M):
 for i in card_n:
     if i in dic:
         dic[i]+=1
-for i in dic.values():
-    print(f"{i} ")
+
+for i in card_m:
+    print(f"{dic[i]} ")
+
+#card_m에 중복이 있을 수 있음(문제에 설명이 없어서 힘들었다)
+#딕셔너리에는 중복이 불가능하므로 틀렸다고 나왔다
+# for i in dic.values():
+#     print(f"{i} ")
