@@ -1,4 +1,4 @@
-package BaekJava;
+package BaekJava.BronzeV;
 
 public class HelloWorld {
     public static void main(String[] args) {
