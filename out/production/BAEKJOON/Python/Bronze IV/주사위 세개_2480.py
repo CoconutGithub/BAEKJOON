@@ -1,0 +1,20 @@
+f,s,t=map(int,input().split())
+if(f==s==t):
+    print(10000+f*1000)
+elif(f==s):
+    print(1000+f*100)
+elif(s==t):
+    print(1000+s*100)
+elif(t==f):
+    print(1000+t*100)
+else:
+    if(f>s):
+        if(f>t):
+            print(f*100)
+        else:
+            print(t*100)
+    else:
+        if(s>t):
+            print(s*100)
+        else:
+            print(t*100)
