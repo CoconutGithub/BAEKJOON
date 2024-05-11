@@ -1,8 +1,9 @@
 from sys import stdin
 input=stdin.readline
+from collections import deque
 
 n=int(input().rstrip())
-queue=[]
+queue=deque()
 
 for i in range(n):
     order=input().rstrip().split()
@@ -10,7 +11,9 @@ for i in range(n):
         queue.append(order[1])
     elif order[0]=='pop':
         if len(queue)>0:
-            print(f"{queue.pop(0)}")
+            #그냥 list의 pop(0)은 O(n)이지만
+            #deque의 popleft는 O(1)로 동작
+            print(f"{queue.popleft()}")
         else:
             print("-1")
     elif order[0]=='size':
