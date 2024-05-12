@@ -1,7 +1,7 @@
 package BaekJava.BronzeIV;
 
 import java.util.*;
-public class threeDice {
+public class threeDice_2480 {
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
         int dice1=s.nextInt();
