@@ -8,7 +8,6 @@ public class maxmin_10818 {
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
         int n = Integer.parseInt(br.readLine());
         List<String> arr = new ArrayList<String>();
         StringTokenizer st = new StringTokenizer(br.readLine());
