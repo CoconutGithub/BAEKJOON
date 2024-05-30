@@ -1,5 +1,6 @@
 from sys import stdin
 input=stdin.readline
+from itertools import product
 
 n,m=map(int,input().rstrip().split())
 l=[]
@@ -15,10 +16,11 @@ def bt(n,m):
     
 bt(n,m)
 
-
-# ln=[i for i in range(1,n+1)]
-# l=[]
-# for i in ln:
-#     for j in ln:
-#         l.append([i,j])
-# print(l)
+# l=[i for i in range(1,n+1)]
+# rs=list(product(l,l))#순열 문제 n에서 m개의 숫자 뽑아서 조합
+# for i in rs:
+#     tmp=str(i)
+#     tmp=tmp.replace("(","")
+#     tmp=tmp.replace(")","")
+#     tmp=tmp.replace(",","")
+#     print(tmp)
