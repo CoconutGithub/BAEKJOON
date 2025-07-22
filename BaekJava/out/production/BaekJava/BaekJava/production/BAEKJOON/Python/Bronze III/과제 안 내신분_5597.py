@@ -10,3 +10,5 @@ for i in range(28):
         temp.remove(num)
 for i in temp:
     print(f"{i}\n")
+
+#이름 변경 한다고
